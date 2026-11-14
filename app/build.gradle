@@ -39,6 +39,6 @@ android {
 }
 dependencies {
     implementation fileTree(dir: "../libs", include: ["*.jar"])
-    // Legacy Google Play expansion downloader and licensing code still use Apache HttpClient.
-    implementation "org.apache.httpcomponents:httpclient-android:4.3.5.1"
+    // The legacy downloader requires the original Apache HttpClient 4.2 API.
+    implementation "org.apache.httpcomponents:httpclient:4.2.6"
 }
